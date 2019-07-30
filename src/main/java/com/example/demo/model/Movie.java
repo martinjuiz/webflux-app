@@ -7,6 +7,11 @@ import lombok.Data;
 @AllArgsConstructor
 public class Movie {
 
+    private int id;
+
     private String name;
+
     private Integer score;
+
+    private String picture;
 }
