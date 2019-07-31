@@ -33,8 +33,7 @@ public class ReactiveMovieRepository implements MovieRepository {
     @Override
     public Flux<Movie> findAll() {
         //Simulate big list of data, streaming it every 2 second delay
-        return Flux.fromIterable(MOVIES)
-                .delayElements( Duration.ofSeconds(2) );
+        return Flux.fromIterable(MOVIES);
     }
 
     @Override
